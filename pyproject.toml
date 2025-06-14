@@ -1,0 +1,51 @@
+[build-system]
+requires = [
+  "hatchling>=1.27",
+]
+
+[project]
+name = "pyrex"
+description = "Simple `xterm` color usage & management."
+dynamic = [
+  "version",
+]
+authors = [
+  { name = "Arian Johnson", email = "i.am@ajohn.dev" }
+]
+maintainers = [
+  { name = "Arian Johnson", email = "i.am@ajohn.dev" }
+]
+requires-python = ">=3.11"
+readme = { content-type = "text/markdown", file = "README.md" }
+license = { file = "LICENSE" }
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Console Fonts",
+  "Topic :: Text Processing :: Fonts",
+  "Topic :: Text Processing :: General",
+  "Topic :: Terminals",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/LeShaunJ/pyhues"
+Documentation = "https://github.com/LeShaunJ/pyhues/blob/main/README.md"
+Repository = "https://github.com/LeShaunJ/pyhues.git"
+"Bug Tracker" = "https://github.com/LeShaunJ/pyhues/issues"
+Changelog = "https://github.com/LeShaunJ/pyhues/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = [
+  "pytest"
+]

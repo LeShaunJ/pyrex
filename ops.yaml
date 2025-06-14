@@ -1,0 +1,17 @@
+dependencies:
+  custom:
+    - pip3 install -e .
+actions:
+  test:
+    command: >-
+      eval "$(pyenv init -)";
+      pyenv local 3.11 3.12 3.13;
+      tox
+options:
+  environment:
+    VIRTUAL_ENV: "${OPS_YML_DIR}/.venv"
+    PATH: "${VIRTUAL_ENV}/bin:${PATH}"
+  pip:
+    command: "${OPS_YML_DIR}/.venv/bin/pip3"
+  exec:
+    load_secrets: true
